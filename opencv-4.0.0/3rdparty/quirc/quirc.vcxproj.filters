@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\src\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\src\quirc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\src\version_db.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\include\quirc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\include\quirc_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\quirc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D7473D33-5614-31F1-B7BF-90E63FD0CEF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2751A05C-4795-35BF-83E0-DC6BF53FDADC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

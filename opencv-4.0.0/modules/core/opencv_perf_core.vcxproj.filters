@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\cuda\perf_gpumat.cpp">
+      <Filter>Src\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_arithm.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_bufferpool.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_channels.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_dxt.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_gemm.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_matop.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\opencl\perf_usage_flags.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_abs.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_addWeighted.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_arithm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_bitwise.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_compare.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_convertTo.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_cvround.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_dft.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_dot.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_inRange.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_io_base64.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_lut.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_mat.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_math.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_merge.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_minmaxloc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_norm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_reduce.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_sort.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_split.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_stat.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_umat.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_perf_core_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\perf\perf_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{05C1B215-29AA-3C78-9678-6DC79D2EA233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CBA23A07-7AC5-3B8A-972E-02D7AF4AEAB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\cuda">
+      <UniqueIdentifier>{96929844-B548-3721-9BCD-F3AB338E8BDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\opencl">
+      <UniqueIdentifier>{FEEF62F8-4326-3F19-89B0-3D256BFDB4B5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3D5F625-2CBF-3331-B4D6-EBA33A8C0F74}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\vs_version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\vs_version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{247E8046-726D-31D7-B02E-AD186071B46E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core.vcxproj">
+      <Project>{13262AF9-029D-3E69-9564-B7E64ADCF4ED}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{BA437F58-9C7A-3EE3-9C03-C9430E300D20}</Project>
+      <Name>opencv_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{A5A180D9-5AA3-38D3-A1F9-9942BB19E6DF}</Project>
+      <Name>opencv_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{998BE142-1B28-300F-B923-8F20C83913C7}</Project>
+      <Name>opencv_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{8E680599-77A2-3478-98C3-B2A561D1B98A}</Project>
+      <Name>opencv_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_perf_core.vcxproj">
+      <Project>{CCE4F396-E70A-357D-B405-13ADD99C335B}</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core.vcxproj">
+      <Project>{290894CA-A599-3306-8342-4C6FEC2682C7}</Project>
+      <Name>opencv_test_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_AVX.vcxproj">
+      <Project>{EF9CCA31-D54F-3FE1-A096-22169E883E2A}</Project>
+      <Name>opencv_test_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_AVX2.vcxproj">
+      <Project>{8FBADB4A-A6E9-3DA8-A243-96F3B0C57CB9}</Project>
+      <Name>opencv_test_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_FP16.vcxproj">
+      <Project>{FFF2A971-B4EC-3CA9-B54B-F7B1309F8AED}</Project>
+      <Name>opencv_test_core_FP16</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_SSE4_1.vcxproj">
+      <Project>{40DA5A57-1BC4-3D10-A51A-23A48680EBF7}</Project>
+      <Name>opencv_test_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_SSE4_2.vcxproj">
+      <Project>{BBE289EC-B875-3BF1-BDEC-956793F85454}</Project>
+      <Name>opencv_test_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\loadsave.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\utils.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_base.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_bmp.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_exr.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_gdal.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_gdcm.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_hdr.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_jpeg.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_jpeg2000.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pam.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pfm.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_png.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pxm.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_sunras.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_tiff.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_webp.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\bitstrm.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\rgbe.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\exif.cpp">
+      <Filter>Src\grfmts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_imgcodecs_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_imgcodecs_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs\ios.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\precomp.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\utils.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_base.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_bmp.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_exr.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_gdal.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_gdcm.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_hdr.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_jpeg.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_jpeg2000.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pam.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pfm.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_png.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_pxm.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_sunras.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_tiff.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmt_webp.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\grfmts.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\bitstrm.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\rgbe.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\src\exif.hpp">
+      <Filter>Src\grfmts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\cvconfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\opencv2\opencv_modules.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\vs_version.rc">
+      <Filter>Src</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{05C1B215-29AA-3C78-9678-6DC79D2EA233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2751A05C-4795-35BF-83E0-DC6BF53FDADC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CBA23A07-7AC5-3B8A-972E-02D7AF4AEAB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\grfmts">
+      <UniqueIdentifier>{47797DCB-E68B-3EBD-92B4-D4608C5DEB37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

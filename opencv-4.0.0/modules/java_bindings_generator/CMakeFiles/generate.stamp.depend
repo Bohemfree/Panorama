@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/yjs/Downloads/opencv-4.0.0/modules/core/misc/java/src/java/core+Core.jcode.in
+C:/Users/yjs/Downloads/opencv-4.0.0/modules/java/common.cmake
+C:/Users/yjs/Downloads/opencv-4.0.0/modules/java/generator/CMakeLists.txt
+C:/Users/yjs/Downloads/opencv-4.0.0/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java.in
+C:/Users/yjs/Downloads/opencv-4.0.0/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java.in

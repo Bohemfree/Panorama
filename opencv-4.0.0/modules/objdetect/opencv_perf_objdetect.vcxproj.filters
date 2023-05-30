@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\perf\opencl\perf_cascades.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\perf\opencl\perf_hogdetect.cpp">
+      <Filter>Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\perf\perf_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\perf\perf_qrcode_pipeline.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\objdetect\opencv_perf_objdetect_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\perf\perf_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{05C1B215-29AA-3C78-9678-6DC79D2EA233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CBA23A07-7AC5-3B8A-972E-02D7AF4AEAB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\opencl">
+      <UniqueIdentifier>{FEEF62F8-4326-3F19-89B0-3D256BFDB4B5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

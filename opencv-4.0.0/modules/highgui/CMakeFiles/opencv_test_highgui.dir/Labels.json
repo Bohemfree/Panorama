@@ -1,0 +1,51 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/yjs/Downloads/opencv-4.0.0/modules/highgui/test/test_gui.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/Users/yjs/Downloads/opencv-4.0.0/modules/highgui/test/test_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/Users/yjs/Downloads/opencv-4.0.0/modules/highgui/test/test_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/highgui/opencv_test_highgui_pch.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_highgui",
+				"AccuracyTest"
+			]
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_highgui",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_highgui"
+	}
+}

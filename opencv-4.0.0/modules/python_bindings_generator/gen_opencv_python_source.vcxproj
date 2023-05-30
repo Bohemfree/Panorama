@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16349592-2936-3C45-8D44-AF54C62DD15A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>gen_opencv_python_source</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\847f1187f00529f8399c943ce2468d63\pyopencv_generated_include.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate files for Python bindings and documentation</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\yjs\AppData\Local\Programs\Python\Python36\python.exe C:/Users/yjs/Downloads/opencv-4.0.0/modules/python/bindings/..//src2/gen2.py C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator/headers.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\modules\python\src2\gen2.py;C:\Users\yjs\Downloads\opencv-4.0.0\modules\python\src2\hdr_parser.py;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\affine.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\base.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\bindings_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\bufferpool.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\check.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\core.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda_stream_accessor.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda_types.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cvstd.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cvstd_wrapper.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\directx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\eigen.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\fast_math.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\mat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\matx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\neon_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ocl.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ocl_genbase.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\opengl.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\operations.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\optim.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ovx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\persistence.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\saturate.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\softfloat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\sse_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\traits.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\types.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\utility.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\va_intel.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\version.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\vsx_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\misc\python\shadow_umat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\flann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\flann_base.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\miniflann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\imgproc.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ml\include\opencv2\ml.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ml\include\opencv2\ml\ml.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo\cuda.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo\photo.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\all_layers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\dict.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\dnn.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\layer.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\shape_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\version.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio\registry.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio\videoio.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include\opencv2\highgui.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include\opencv2\highgui\highgui.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\features2d\include\opencv2\features2d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\features2d\include\opencv2\features2d\features2d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\calib3d\include\opencv2\calib3d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\calib3d\include\opencv2\calib3d\calib3d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\include\opencv2\objdetect.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\include\opencv2\objdetect\objdetect.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\warpers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\autocalib.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\blenders.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\camera.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\exposure_compensate.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\matchers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\motion_estimators.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\seam_finders.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\timelapsers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\util.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\warpers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\background_segm.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\tracking.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\video.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_include.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_funcs.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_types.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_type_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_ns_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_signatures.json</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate files for Python bindings and documentation</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\yjs\AppData\Local\Programs\Python\Python36\python.exe C:/Users/yjs/Downloads/opencv-4.0.0/modules/python/bindings/..//src2/gen2.py C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator/headers.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\modules\python\src2\gen2.py;C:\Users\yjs\Downloads\opencv-4.0.0\modules\python\src2\hdr_parser.py;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\affine.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\base.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\bindings_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\bufferpool.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\check.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\core.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda_stream_accessor.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cuda_types.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cvstd.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\cvstd_wrapper.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\directx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\eigen.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\fast_math.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\mat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\matx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\neon_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ocl.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ocl_genbase.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\opengl.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\operations.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\optim.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\ovx.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\persistence.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\saturate.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\softfloat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\sse_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\traits.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\types.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\utility.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\va_intel.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\version.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\vsx_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\misc\python\shadow_umat.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\flann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\flann_base.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\flann\include\opencv2\flann\miniflann.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\imgproc.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ml\include\opencv2\ml.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ml\include\opencv2\ml\ml.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo\cuda.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\photo\include\opencv2\photo\photo.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\all_layers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\dict.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\dnn.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\layer.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\shape_utils.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\dnn\include\opencv2\dnn\version.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio\registry.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include\opencv2\videoio\videoio.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include\opencv2\highgui.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include\opencv2\highgui\highgui.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\features2d\include\opencv2\features2d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\features2d\include\opencv2\features2d\features2d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\calib3d\include\opencv2\calib3d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\calib3d\include\opencv2\calib3d\calib3d.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\include\opencv2\objdetect.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\objdetect\include\opencv2\objdetect\objdetect.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\warpers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\autocalib.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\blenders.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\camera.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\exposure_compensate.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\matchers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\motion_estimators.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\seam_finders.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\timelapsers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\util.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\stitching\include\opencv2\stitching\detail\warpers.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\background_segm.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\tracking.hpp;C:\Users\yjs\Downloads\opencv-4.0.0\modules\video\include\opencv2\video\video.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_include.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_funcs.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_types.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_type_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_ns_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_signatures.json</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\0cba98e79045c711b00302d188ab36ce\gen_opencv_python_source.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_include.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_funcs.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_types.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_type_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_ns_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_signatures.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\CMakeFiles\gen_opencv_python_source</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_include.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_funcs.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_types.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_type_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_generated_ns_reg.h;C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\pyopencv_signatures.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\CMakeFiles\gen_opencv_python_source</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\python\bindings\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/python/bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/python/bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/python_bindings_generator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python_bindings_generator\CMakeFiles\gen_opencv_python_source">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{247E8046-726D-31D7-B02E-AD186071B46E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

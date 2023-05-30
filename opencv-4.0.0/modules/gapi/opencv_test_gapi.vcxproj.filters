@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_compoundkernel_tests.cpp">
+      <Filter>Src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_core_tests.cpp">
+      <Filter>Src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_imgproc_tests.cpp">
+      <Filter>Src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_operators_tests.cpp">
+      <Filter>Src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_core_tests_cpu.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_core_tests_fluid.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_imgproc_tests_cpu.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_imgproc_tests_fluid.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_operators_tests_cpu.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\cpu\gapi_operators_tests_fluid.cpp">
+      <Filter>Src\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_array_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_basic_hetero_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_desc_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_fluid_resize_test.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_fluid_roi_test.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_fluid_test.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_fluid_test_kernels.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_gcompiled_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_gcomputation_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_kernel_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_sample_pipelines.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_scalar_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_smoke_test.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_typed_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_util_tests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gpu\gapi_core_tests_gpu.cpp">
+      <Filter>Src\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gpu\gapi_imgproc_tests_gpu.cpp">
+      <Filter>Src\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gpu\gapi_operators_tests_gpu.cpp">
+      <Filter>Src\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_backend_tests.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_executor_tests.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_garg_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_gmetaarg_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_gmodel_builder_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_island_fusion_tests.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_island_tests.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_recompilation_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_resolve_kernel_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_int_vectorref_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\internal\gapi_transactions_test.cpp">
+      <Filter>Src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\own\gapi_types_tests.cpp">
+      <Filter>Src\own</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\own\mat_tests.cpp">
+      <Filter>Src\own</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\own\scalar_tests.cpp">
+      <Filter>Src\own</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\test_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\util\any_tests.cpp">
+      <Filter>Src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\util\optional_tests.cpp">
+      <Filter>Src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\util\variant_tests.cpp">
+      <Filter>Src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_test_gapi_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_core_tests.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_core_tests_inl.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_imgproc_tests.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_imgproc_tests_inl.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_operators_tests.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_operators_tests_inl.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\common\gapi_tests_common.hpp">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_fluid_test_kernels.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\gapi_mock_kernels.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\test\test_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\gapi\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{05C1B215-29AA-3C78-9678-6DC79D2EA233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\common">
+      <UniqueIdentifier>{56A2AFCB-F815-3FBD-AA29-6043F87C240C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CBA23A07-7AC5-3B8A-972E-02D7AF4AEAB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\common">
+      <UniqueIdentifier>{335BE183-DC10-3E8B-9ED1-E7ACDADDEE4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\cpu">
+      <UniqueIdentifier>{26AE9AB0-6612-338D-885C-32D766D69099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\gpu">
+      <UniqueIdentifier>{110DFA0D-5B20-3672-9EBD-9E43531E965A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\internal">
+      <UniqueIdentifier>{DEBAF2EE-F6D5-35D1-8F94-43ECC1BAD103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\own">
+      <UniqueIdentifier>{ECAD9A43-2A58-38DE-9576-DD952D4797FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\util">
+      <UniqueIdentifier>{E0034CEE-C5E2-3977-963D-CCC2C9997185}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

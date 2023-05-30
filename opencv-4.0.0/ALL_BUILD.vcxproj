@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3D5F625-2CBF-3331-B4D6-EBA33A8C0F74}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindBLAS.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindLAPACK.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPython2.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\ffmpeg\ffmpeg.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\ippicv\ippicv.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\FindGstreamerWindows.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCRTLinkage.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCompilerOptimizations.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCompilerOptions.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectApacheAnt.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectDirectX.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectOpenCL.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectPython.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectTrace.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectVTK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDownload.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVExtraTargets.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindFrameworks.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindIPP.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindIPPIW.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLAPACK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsGUI.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsPerf.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsVideo.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindMKL.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindOpenBLAS.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindProtobuf.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenABI.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenAndroidMK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenConfig.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenHeaders.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenSetupVars.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVMinDepVersions.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVModule.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVPCHSupport.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVPackaging.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVUtils.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVVersion.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx2.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx512.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx512skx.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_fp16.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_popcnt.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse3.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse41.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse42.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_ssse3.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\directx.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\opencl.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\win32uitest.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cmake_uninstall.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\custom_hal.hpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cv_cpu_config.h.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cvconfig.h.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\opencv_modules.hpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\setup_vars_win32.cmd.in;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\version.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindBLAS.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindLAPACK.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPython2.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ProcessorCount.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\ffmpeg\ffmpeg.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\3rdparty\ippicv\ippicv.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeCCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\FindGstreamerWindows.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCRTLinkage.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCompilerOptimizations.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVCompilerOptions.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectApacheAnt.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectDirectX.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectOpenCL.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectPython.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectTrace.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDetectVTK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVDownload.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVExtraTargets.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindFrameworks.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindIPP.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindIPPIW.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLAPACK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsGUI.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsPerf.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindLibsVideo.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindMKL.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindOpenBLAS.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVFindProtobuf.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenABI.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenAndroidMK.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenConfig.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenHeaders.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVGenSetupVars.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVMinDepVersions.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVModule.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVPCHSupport.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVPackaging.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVUtils.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\OpenCVVersion.cmake;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx2.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx512.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_avx512skx.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_fp16.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_popcnt.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse3.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse41.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_sse42.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\cpu_ssse3.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\directx.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\opencl.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\checks\win32uitest.cpp;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cmake_uninstall.cmake.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\custom_hal.hpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cv_cpu_config.h.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\cvconfig.h.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\opencv_modules.hpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\setup_vars_win32.cmd.in;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include\opencv2\core\version.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{247E8046-726D-31D7-B02E-AD186071B46E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\openexr\IlmImf.vcxproj">
+      <Project>{A01AEB9D-4482-36AC-AA70-279FAB1D3612}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\ade.vcxproj">
+      <Project>{E9E349A8-CD44-3DEF-B58C-559D7804C953}</Project>
+      <Name>ade</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{E5BD0440-B81B-3A07-BD3E-712D2209AE49}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{288F86D3-18D2-36FC-A363-FFD7CB99F82E}</Project>
+      <Name>ittnotify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\libjasper\libjasper.vcxproj">
+      <Project>{FD500E19-E8FC-3926-A4BA-2230E3289B31}</Project>
+      <Name>libjasper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\libjpeg-turbo\libjpeg-turbo.vcxproj">
+      <Project>{64E3564E-8C2A-361C-9143-679A7974B5C1}</Project>
+      <Name>libjpeg-turbo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\libpng\libpng.vcxproj">
+      <Project>{255283C3-8B31-3DE8-BAC5-3D068236E1C8}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\protobuf\libprotobuf.vcxproj">
+      <Project>{A2A41214-5D0D-3063-A472-7B410FFB7E30}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\libtiff\libtiff.vcxproj">
+      <Project>{46148B36-D5A1-32CD-AC47-60BD1FF3B5A7}</Project>
+      <Name>libtiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\libwebp\libwebp.vcxproj">
+      <Project>{92B670E4-A13B-31B6-BFB1-9440CAF9E474}</Project>
+      <Name>libwebp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\apps\annotation\opencv_annotation.vcxproj">
+      <Project>{990102AF-64B3-3ABB-B30A-76555A716DF7}</Project>
+      <Name>opencv_annotation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{F70852DF-18C3-3815-AA97-3F3A4889CB1C}</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\calib3d\opencv_calib3d_AVX2.vcxproj">
+      <Project>{51DB9804-C32B-3F6E-8181-14686A1FE4BA}</Project>
+      <Name>opencv_calib3d_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core.vcxproj">
+      <Project>{13262AF9-029D-3E69-9564-B7E64ADCF4ED}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{BA437F58-9C7A-3EE3-9C03-C9430E300D20}</Project>
+      <Name>opencv_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{A5A180D9-5AA3-38D3-A1F9-9942BB19E6DF}</Project>
+      <Name>opencv_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{998BE142-1B28-300F-B923-8F20C83913C7}</Project>
+      <Name>opencv_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{8E680599-77A2-3478-98C3-B2A561D1B98A}</Project>
+      <Name>opencv_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\dnn\opencv_dnn.vcxproj">
+      <Project>{4419ABF1-CFF7-31F7-84CA-1C577517F15C}</Project>
+      <Name>opencv_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\dnn\opencv_dnn_AVX.vcxproj">
+      <Project>{784A22BF-4250-3165-A0E9-4752599ADA38}</Project>
+      <Name>opencv_dnn_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\dnn\opencv_dnn_AVX2.vcxproj">
+      <Project>{8CA33DDD-713B-3B8C-B1E9-33D53AAC7C7A}</Project>
+      <Name>opencv_dnn_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{78168813-1F91-3934-8BE6-009D9C2DBE32}</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\features2d\opencv_features2d_AVX2.vcxproj">
+      <Project>{A7CEDE0E-98AA-334A-B6E3-B8DE8ADF56AD}</Project>
+      <Name>opencv_features2d_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\flann\opencv_flann.vcxproj">
+      <Project>{B938CA81-0BC8-3CF3-8FF4-B55CFAF916C4}</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_gapi.vcxproj">
+      <Project>{54A06010-96D6-37C1-89A3-AE6FC986F318}</Project>
+      <Name>opencv_gapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_gapi_AVX2.vcxproj">
+      <Project>{DA8984FB-0381-3951-A5C1-8315E385466D}</Project>
+      <Name>opencv_gapi_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_gapi_SSE4_1.vcxproj">
+      <Project>{A2D38855-D61B-3E1A-8BC3-FD013E6C73D5}</Project>
+      <Name>opencv_gapi_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{B9878902-72C1-326D-BD98-D06998B85F82}</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{11CA0796-F9B6-3834-9E21-B0AE41FB3E34}</Project>
+      <Name>opencv_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{03D0B521-B39E-3C54-A17B-1B0322691999}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_imgproc_AVX.vcxproj">
+      <Project>{6CF2DFDF-28CD-3877-9B4D-5FCD99E73728}</Project>
+      <Name>opencv_imgproc_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_imgproc_AVX2.vcxproj">
+      <Project>{33AEA0B2-23FA-3CFD-850A-77D0B0533A89}</Project>
+      <Name>opencv_imgproc_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_imgproc_SSE4_1.vcxproj">
+      <Project>{B884C570-4A31-3F47-BF75-18848088839E}</Project>
+      <Name>opencv_imgproc_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\apps\interactive-calibration\opencv_interactive-calibration.vcxproj">
+      <Project>{61B47529-B776-33D5-950B-FA087F936CE1}</Project>
+      <Name>opencv_interactive-calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\ml\opencv_ml.vcxproj">
+      <Project>{72748C8B-832D-381C-8181-D053EC2E13CC}</Project>
+      <Name>opencv_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>{77C5CF17-08FF-3BF2-8684-FF82D9452E9C}</Project>
+      <Name>opencv_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\calib3d\opencv_perf_calib3d.vcxproj">
+      <Project>{A82D6191-5C76-3BDA-B1E9-BBDB7AE37FE4}</Project>
+      <Name>opencv_perf_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_perf_core.vcxproj">
+      <Project>{CCE4F396-E70A-357D-B405-13ADD99C335B}</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\dnn\opencv_perf_dnn.vcxproj">
+      <Project>{1E8745D6-340A-32A4-AB78-D207DF4112DB}</Project>
+      <Name>opencv_perf_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\features2d\opencv_perf_features2d.vcxproj">
+      <Project>{7F21A920-997D-3B9F-AEB8-41E5E3A8AB2E}</Project>
+      <Name>opencv_perf_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_perf_gapi.vcxproj">
+      <Project>{DC4DAAFA-6DBC-35A2-80DB-D19ECB58D220}</Project>
+      <Name>opencv_perf_gapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_perf_imgcodecs.vcxproj">
+      <Project>{BC668424-6784-3CF9-AD89-E3E6AF47BD1A}</Project>
+      <Name>opencv_perf_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_perf_imgproc.vcxproj">
+      <Project>{B537A3DE-66AD-33D2-BB14-863267F28503}</Project>
+      <Name>opencv_perf_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\objdetect\opencv_perf_objdetect.vcxproj">
+      <Project>{2A98B3D5-EA8C-36B6-84D7-CFF95E87FD22}</Project>
+      <Name>opencv_perf_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\photo\opencv_perf_photo.vcxproj">
+      <Project>{1EBDB840-D20E-31D8-83E0-E0A06F23197D}</Project>
+      <Name>opencv_perf_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\stitching\opencv_perf_stitching.vcxproj">
+      <Project>{0663CDCA-3C98-3A2A-9CFA-4F14629A57C9}</Project>
+      <Name>opencv_perf_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\video\opencv_perf_video.vcxproj">
+      <Project>{FD16078A-C699-3C69-AFD3-1D55265D0C8B}</Project>
+      <Name>opencv_perf_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\opencv_perf_videoio.vcxproj">
+      <Project>{35F38B12-64F7-32E9-9E2A-98F76CCD9472}</Project>
+      <Name>opencv_perf_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\photo\opencv_photo.vcxproj">
+      <Project>{921A1464-5498-34FC-87F1-DB226F3C1822}</Project>
+      <Name>opencv_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\python3\opencv_python3.vcxproj">
+      <Project>{022CF575-3F7E-3228-8FC0-7F20F766470F}</Project>
+      <Name>opencv_python3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\stitching\opencv_stitching.vcxproj">
+      <Project>{3646FA46-8F83-3558-B2BF-FA0276C7F55C}</Project>
+      <Name>opencv_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\calib3d\opencv_test_calib3d.vcxproj">
+      <Project>{B7EB69A1-8F11-315A-BC10-5BE2D898EB9C}</Project>
+      <Name>opencv_test_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core.vcxproj">
+      <Project>{290894CA-A599-3306-8342-4C6FEC2682C7}</Project>
+      <Name>opencv_test_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_AVX.vcxproj">
+      <Project>{EF9CCA31-D54F-3FE1-A096-22169E883E2A}</Project>
+      <Name>opencv_test_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_AVX2.vcxproj">
+      <Project>{8FBADB4A-A6E9-3DA8-A243-96F3B0C57CB9}</Project>
+      <Name>opencv_test_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_FP16.vcxproj">
+      <Project>{FFF2A971-B4EC-3CA9-B54B-F7B1309F8AED}</Project>
+      <Name>opencv_test_core_FP16</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_SSE4_1.vcxproj">
+      <Project>{40DA5A57-1BC4-3D10-A51A-23A48680EBF7}</Project>
+      <Name>opencv_test_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_test_core_SSE4_2.vcxproj">
+      <Project>{BBE289EC-B875-3BF1-BDEC-956793F85454}</Project>
+      <Name>opencv_test_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\dnn\opencv_test_dnn.vcxproj">
+      <Project>{777AE611-D4F5-3635-9529-A651D5EDBF91}</Project>
+      <Name>opencv_test_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\features2d\opencv_test_features2d.vcxproj">
+      <Project>{28B7B1C0-16FA-369F-A538-050CFC1EB87E}</Project>
+      <Name>opencv_test_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\flann\opencv_test_flann.vcxproj">
+      <Project>{F9709A36-F67D-3473-8087-1B2CAB09BC8F}</Project>
+      <Name>opencv_test_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\gapi\opencv_test_gapi.vcxproj">
+      <Project>{BFE76ECC-946F-3498-8D07-3C109AA329D5}</Project>
+      <Name>opencv_test_gapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\highgui\opencv_test_highgui.vcxproj">
+      <Project>{7F6CB88F-3221-3CF0-97D3-9D10F09610D2}</Project>
+      <Name>opencv_test_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_test_imgcodecs.vcxproj">
+      <Project>{2D3628E6-79E5-359D-B012-57A2C8AF39B3}</Project>
+      <Name>opencv_test_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_test_imgproc.vcxproj">
+      <Project>{7D8C206B-5BDC-3415-8EC1-0B262C50BD00}</Project>
+      <Name>opencv_test_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\ml\opencv_test_ml.vcxproj">
+      <Project>{362D582C-D4B1-3EFD-8720-C36B185F60FE}</Project>
+      <Name>opencv_test_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\objdetect\opencv_test_objdetect.vcxproj">
+      <Project>{C7DC6255-EDE6-3DAE-B917-89D5E8F71BC2}</Project>
+      <Name>opencv_test_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\photo\opencv_test_photo.vcxproj">
+      <Project>{17656FD8-16EE-314D-B7C9-BE80EABE5284}</Project>
+      <Name>opencv_test_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\stitching\opencv_test_stitching.vcxproj">
+      <Project>{C7C23E75-3DC9-3774-BFD7-7FB8EB325F9A}</Project>
+      <Name>opencv_test_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\video\opencv_test_video.vcxproj">
+      <Project>{B1FB5DEE-BC17-3013-8D3A-F5FD2B220D6C}</Project>
+      <Name>opencv_test_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\opencv_test_videoio.vcxproj">
+      <Project>{5BC034F4-9E95-37C5-B174-46200D8CFA35}</Project>
+      <Name>opencv_test_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\ts\opencv_ts.vcxproj">
+      <Project>{313BEB84-1395-348F-8224-D0E766A98422}</Project>
+      <Name>opencv_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\apps\version\opencv_version.vcxproj">
+      <Project>{484AEAC1-16BA-3C72-9B0A-9F1C8B63064A}</Project>
+      <Name>opencv_version</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\apps\version\opencv_version_win32.vcxproj">
+      <Project>{434C79C3-05E2-3D36-B7F3-9FCBBD6F9FB6}</Project>
+      <Name>opencv_version_win32</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\video\opencv_video.vcxproj">
+      <Project>{29615477-CE5F-3CCA-ADC1-6DEDF27F2068}</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{CFE03558-518D-3176-930B-474A9C2B7DDC}</Project>
+      <Name>opencv_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\apps\visualisation\opencv_visualisation.vcxproj">
+      <Project>{3A8609D1-A540-3987-AAC2-A0BFEE7D1118}</Project>
+      <Name>opencv_visualisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\quirc\quirc.vcxproj">
+      <Project>{8E6D6247-5502-3752-BEBD-A461408A0752}</Project>
+      <Name>quirc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\zlib\zlib.vcxproj">
+      <Project>{8FB4E66B-3423-3A59-B583-4C8728FFFF49}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

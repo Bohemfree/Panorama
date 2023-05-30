@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35F38B12-64F7-32E9-9E2A-98F76CCD9472}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_perf_videoio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_perf_videoio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_perf_videoiod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_perf_videoio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_perf_videoio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>20</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DXVA;HAVE_FFMPEG_WRAPPER=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DXVA;HAVE_FFMPEG_WRAPPER=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\opencv_ts400d.lib;..\..\lib\Debug\opencv_highgui400d.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\lib\Debug\opencv_videoio400d.lib;..\..\lib\Debug\opencv_imgcodecs400d.lib;..\..\lib\Debug\opencv_imgproc400d.lib;..\..\lib\Debug\opencv_core400d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/yjs/Downloads/opencv-4.0.0/build/bin/Debug/opencv_perf_videoiod.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yjs/Downloads/opencv-4.0.0/build/bin/Debug/opencv_perf_videoiod.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>20</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DXVA;HAVE_FFMPEG_WRAPPER=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DXVA;HAVE_FFMPEG_WRAPPER=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\yjs\Downloads\opencv-4.0.0\build;C:\Users\yjs\Downloads\opencv-4.0.0\modules\ts\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgcodecs\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\core\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\imgproc\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\highgui\include;C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\opencv_ts400.lib;..\..\lib\Release\opencv_highgui400.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\lib\Release\opencv_videoio400.lib;..\..\lib\Release\opencv_imgcodecs400.lib;..\..\lib\Release\opencv_imgproc400.lib;..\..\lib\Release\opencv_core400.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/yjs/Downloads/opencv-4.0.0/build/bin/Release/opencv_perf_videoio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yjs/Downloads/opencv-4.0.0/build/bin/Release/opencv_perf_videoio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/videoio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\dllmain.cpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\vs_version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/yjs/Downloads/opencv-4.0.0 -BC:/Users/yjs/Downloads/opencv-4.0.0/build --check-stamp-file C:/Users/yjs/Downloads/opencv-4.0.0/build/modules/videoio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\dllmain.cpp.in;C:\Users\yjs\Downloads\opencv-4.0.0\cmake\templates\vs_version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf\perf_input.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf\perf_main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf\perf_output.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+    <ClInclude Include="C:\Users\yjs\Downloads\opencv-4.0.0\modules\videoio\perf\perf_precomp.hpp" />
+    <ClCompile Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\opencv_perf_videoio_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceforModuleDependencies>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yjs/Downloads/opencv-4.0.0/modules/videoio/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <ScanSourceforModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceforModuleDependencies>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{247E8046-726D-31D7-B02E-AD186071B46E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{E5BD0440-B81B-3A07-BD3E-712D2209AE49}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\core\opencv_core.vcxproj">
+      <Project>{13262AF9-029D-3E69-9564-B7E64ADCF4ED}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{B9878902-72C1-326D-BD98-D06998B85F82}</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{11CA0796-F9B6-3834-9E21-B0AE41FB3E34}</Project>
+      <Name>opencv_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{03D0B521-B39E-3C54-A17B-1B0322691999}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\ts\opencv_ts.vcxproj">
+      <Project>{313BEB84-1395-348F-8224-D0E766A98422}</Project>
+      <Name>opencv_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\yjs\Downloads\opencv-4.0.0\build\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{CFE03558-518D-3176-930B-474A9C2B7DDC}</Project>
+      <Name>opencv_videoio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
